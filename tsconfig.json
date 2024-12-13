@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ESNext",
+    "jsx": "react-jsx" ,
+    "allowJs": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./src",                // Optional, if you want to set base path for imports
+    "paths": {
+      "@/hooks/*": ["hooks/*"],        // Optional, alias to make imports cleaner
+      "@/components/*": ["components/*"]
+    },
+    "outDir": "./dist",
+    "rootDir": "./src", // Excludes unnecessary folders
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
